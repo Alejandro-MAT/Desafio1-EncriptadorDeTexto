@@ -1,0 +1,296 @@
+*{
+    background: #E9ECF8;
+    font-family: "Inter", sans-serif;
+}
+.contenedorGlobal{
+    width: 100vw;
+}
+.contenedorLogo{
+    display: block;
+}
+.contenedorLogo img{
+    display: block;
+    margin: 2.5vh 4vw 8vh;
+}
+.contenedorPrincipal{
+    width: 43vw;
+    height: 100vh;
+    margin-left: 18vw;
+    float: left;
+}
+.contenedorMensajePrincipal{
+    width: 100%;
+    height: 73%;
+
+}
+.mensajePrincipal{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 3.5vh;
+    color: #0A3871;
+}
+.mensajePrincipal::placeholder{
+    color: #0A3871;
+}
+.contenedorAdvertencia{
+    margin: 1vw 0;
+}
+.contenedorAdvertencia img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.5vh;
+    margin-left: 0;
+}
+.contenedorAdvertencia p{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.5vh;
+}
+/* botones */
+.contenedorBotones{
+    width: 100%;
+    height: 10%;
+}
+.botones{
+    display: inline-block;
+    width: 43%;
+    height: 80%;
+    border-radius: 2.3vh;
+    font-size: 2vh;
+}
+
+.botones:first-child{
+    margin: 0 4.7vw 2vh 0.4vw;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border: none;
+}
+.botones:nth-child(2n){
+    background-color: #D8DFE8;
+    border: solid #0A3871 0.5px ;
+    color: #0A3871;
+}
+
+.botones:hover{
+    cursor: pointer;
+}
+
+ /* SEGUNDO BLOQUE */
+.contenedorSecundario{
+    width: 22vw;
+    height: 100vh;
+    float: right;
+    margin: -110px 10vw 0 0;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+.contenedorMensajeSecundario{
+    background-color: #FFFFFF;
+    width: 20vw;
+    height: 80vh;
+    display: block;
+    margin: 13vh 1vw 15vh;
+    text-align: center;
+    float: right;
+    border-radius: 35px;
+    padding-top: 2%;
+}
+.contenedorSecundario img{
+    width: 100%;
+}
+.contenedorSecundario h2{
+    background-color: #FFFFFF;
+    color: #343A40;
+    margin: 1.5vw 0;
+    padding: 0vh 1.5vw 1.5vh;
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+.contenedorSecundario p{
+    background-color: #FFFFFF;
+    color: #495057;
+    padding: 0vh 0 1.5vh;
+    font-size: 1vw;
+    word-wrap: break-word;
+}
+
+
+@media  screen and (min-width: 0px) and (max-width: 425px){
+    
+    .contenedorLogo{
+        display: block;
+    }
+    .contenedorLogo img{
+        display: block;
+        margin: 2.5vh 4vw 6vh;
+    }
+    .contenedorPrincipal{
+        display: block;
+        width: 100vw;
+        height: 90vh;
+        margin: 0;
+        float: none;
+    }
+    .contenedorMensajePrincipal{
+        width: 90%;
+        height: 70%;
+        margin: 0 auto 2vh;
+    }
+    .contenedorAdvertencia{
+        margin-bottom: 2vh;
+    }
+    .contenedorAdvertencia img{
+        display: inline-block;
+        vertical-align: middle;
+        width: 3vw;
+        margin-left: 5vw;
+    }
+    .contenedorAdvertencia p{
+        display: inline-block;
+        font-size: 3vw;
+    }
+    .contenedorBotones{
+        width: 100%;
+        height: 20%;
+    }
+    .botones{
+        display: block;
+        margin: 2vh auto;
+        width: 90%;
+        height: 45%;
+    }
+    .botones:first-child{
+        margin: 0 auto;
+    }
+    
+    .contenedorSecundario{
+
+        display: block;
+        width: 90%;
+        float: none;
+        margin: 0 auto;
+        background-color: #E9ECF8;
+    }
+    .contenedorMensajeSecundario{
+        width: 90%;
+        height: none;
+        display: block;
+        margin: 5% auto;
+        text-align: center;
+        float: none;
+        margin-top: none;
+        border-radius: 18px;
+        height: auto;
+    }
+    .contenedorSecundario img{
+        width: 0;
+        margin: 0;
+    }
+    .contenedorSecundario h2{
+        margin: 3% auto 0;
+        padding: 0vh 2vw 2vh;
+        font-weight: bold;
+        font-size: 6vw;
+    }
+    .contenedorSecundario p{
+        margin: 0 auto;
+        width: 84%;
+        padding: 0vh 0 2vh;
+        font-size: 4vw;
+    }
+    
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px){
+    
+    .contenedorLogo img{
+        margin-bottom: 2.5vh 7vw 10vh;
+    }
+    .contenedorPrincipal{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        float: none;
+    }
+    .contenedorMensajePrincipal{
+        width: 90%;
+        height: 70%;
+        margin: 4vh auto 2vh;
+    }
+    .mensajePrincipal{
+        font-size: 3.5vh;
+    }
+    .contenedorAdvertencia{
+        margin: 2vh 0;
+    }
+    .contenedorAdvertencia img{
+        display: inline-block;
+        vertical-align: middle;
+        width: 2vw;
+        margin-left: 5vw;
+    }
+    .contenedorAdvertencia p{
+        display: inline-block;
+        font-size: 2vw;
+    }
+
+    /* botones */
+    .contenedorBotones{
+        width: 100%;
+        height: 10%;
+        margin: 0;
+    }
+    
+    .botones:first-child{
+        margin: 0 4vw 2vh 0;
+        margin-left: 5vw;
+    }
+    /* SEGUNDO BLOQUE */
+    .contenedorSecundario{
+        float: none;
+        border: none;
+        display: block;
+        width: 100vw;
+        height: 35vh;
+        background-color: #E9ECF8;
+    }
+    .contenedorMensajeSecundario{
+        width: 90%;
+        height: 50%;
+        display: block;
+        margin: 1vh auto;
+        text-align: center;
+        float: none;
+        margin-top: none;
+        background-color: #FFFFFF;
+    }
+    .contenedorSecundario img{
+        width: 0;
+    }
+    .contenedorSecundario h2{
+        margin: 1.5vw 0;
+        padding: 0vh 0 1.5vh;
+        font-weight: bold;
+        font-size: 3.5vw;
+        background-color: #FFFFFF;
+    }
+    .contenedorSecundario p{
+        margin-top: 2vw;
+        padding: 0vh 0 1.5vh;
+        font-size: 2.5vw;
+        background-color: #FFFFFF;
+    }
+    
+} 
+
+
+
+
+
+
+
